@@ -47,7 +47,7 @@ export TERM=xterm
 		FTP=N
 		HOSTFTP=192.168.1.12
 		USERFTP=debian
-		PWDFTP=debian@chucky2401
+		PWDFTP=***********
 	# Dossier et BDD à sauvegarder
 		REPWWW=('/var/www/glpi' '/home/tristan/www');
 		REPWWWNAM=('glpi' 'tristan');
@@ -322,7 +322,7 @@ export TERM=xterm
 				## Envoie mail
 				if [ $envMail = 'Y' ]
 				then
-					cat $txtMail | mailx -s "Sauvegarde du $DATE" -a $_LOG chuckydu24@gmail.com
+					cat $txtMail | mailx -s "Sauvegarde du $DATE" -a $_LOG john.doe@domain.com
 				fi
 			;;
 			"-debug" | "debug")
